@@ -89,7 +89,7 @@ X_test = tfidf_vectorizer.transform(text_data)
 # 预测测试集
 test_preds = model.predict(X_test)
 test_preds = test_preds.tolist()
-out = open('MLP results.txt', 'w', encoding='utf-8')
+out = open('results.txt', 'w', encoding='utf-8')
 out.write('id, pred\n')
 
 # 输出预测结果到results.txt中
