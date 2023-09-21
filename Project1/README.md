@@ -67,7 +67,7 @@ python 逻辑回归.py
 ## 参考资料
 [1] http://t.csdn.cn/g4HmC \
 [2] https://developer.aliyun.com/article/1118850 \
-[3] https://monkeylearn.com/text-classification/
+[3] https://monkeylearn.com/text-classification/ \
 [4]https://stackoverflow.com/questions/72326025/cannot-import-name-pad-sequences-from-keras-preprocessing-sequence \
 [5]https://monkeylearn.com/blog/what-is-tf-idf/ \
 [6]https://github.com/chongzicbo/nlp-ml-dl-notes/blob/master/code/textclassification/tfidf_nb. \
