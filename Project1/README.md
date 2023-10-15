@@ -25,7 +25,22 @@ pip install numpy
 pip install keras
 pip install matplotlib
 ```
+本次实验用到的库：
 
+1. json：用于处理JSON数据的库。
+2. pandas：数据处理库。
+3. sklearn：机器学习库。
+4. TfidfVectorizer：Scikit-Learn的一部分，用于TF-IDF向量化。
+5. MLPClassifier：Scikit-Learn中的多层感知器分类器。
+6. SVC：Scikit-Learn中的SVM分类器。
+7. numpy：数值计算库。
+8. torch：PyTorch深度学习框架。
+9. nn 和 optim 模块来自PyTorch。
+10. keras.preprocessing.text：Keras文本预处理模块。
+11. keras_preprocessing.sequence：Keras序列预处理模块。
+12. DecisionTreeClassifier：Scikit-Learn中的决策树分类器。
+13. LogisticRegression：Scikit-Learn中的逻辑回归分类器。
+14. matplotlib.pyplot：用于创建图表和可视化的库。
  
 
 ## Repository Structure 
@@ -38,10 +53,9 @@ pip install matplotlib
 |-- TextCNN.py  # TextCNN代码
 |-- 决策树.py   # 决策树代码
 |-- 逻辑回归.py # 逻辑回归代码
-|-- results.txt # 最优模型(MLP)预测结果
+|-- results.txt # 最优(MLP)预测结果
 |-- train_data.txt	# 训练集
 |-- test.txt	# 测试集
-|-- submit_sample.txt	# 
 |-- README.md   #对仓库的解释
 |-- requirements.txt    #本次实验的环境
 ```
@@ -67,7 +81,7 @@ python 逻辑回归.py
 ## 参考资料
 [1] http://t.csdn.cn/g4HmC \
 [2] https://developer.aliyun.com/article/1118850 \
-[3] https://monkeylearn.com/text-classification/
+[3] https://monkeylearn.com/text-classification/ \
 [4]https://stackoverflow.com/questions/72326025/cannot-import-name-pad-sequences-from-keras-preprocessing-sequence \
 [5]https://monkeylearn.com/blog/what-is-tf-idf/ \
 [6]https://github.com/chongzicbo/nlp-ml-dl-notes/blob/master/code/textclassification/tfidf_nb. \
@@ -77,6 +91,6 @@ python 逻辑回归.py
 
 
 ## 还想说两点：
-1.除了逻辑回归所有代码的运行时间都很长(因为分割训练集和数据集用的是Kfolds),不是无法运行。\
+1.除了逻辑回归所有代码的运行时间都很长(因为分割训练集和数据集用的是Kfolds，再加上参数选择，代码中有很多循环，时间复杂度比较高),不是无法运行。\
 2.为了缩减实验报告篇幅，有一些代码图片被我缩小了，可能不太利于观察。
 ## 请助教手下留情

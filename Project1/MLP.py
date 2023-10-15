@@ -43,7 +43,7 @@ for train_index, val_index in kf.split(df['raw'], df['label']):
     X_val = tfidf_vectorizer.transform(X_val)
 
     # 使用MLP模型
-    model = MLPClassifier(hidden_layer_sizes=(100, ), max_iter=1000)  # MLP模型
+    model = MLPClassifier(hidden_layer_sizes=(100,), max_iter=1000)  # MLP模型
     model.fit(X_train, train_df['label'])
 
     val_preds = model.predict(X_val)
@@ -147,6 +147,7 @@ for number, test in zip(number_data, test_preds):
 #     param_grid = {
 #         'hidden_layer_sizes': [(50,), (100,), (150,)],  # 可调节隐藏层大小
 #         'max_iter': [500, 1000, 1500],  # 可调节最大迭代次数
+#         'hidden_layer_sizes': [(100,), (100, 100), (100, 100, 100), (100, 100, 100, 100)] # 可调节线性层数
 #         'alpha': [0.0001, 0.001, 0.01]  # 可调节正则化参数
 #     }
 #
