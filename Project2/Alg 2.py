@@ -39,10 +39,24 @@ def find_K_shortest_paths(N, M, K, connections):
             print(-1)
 
 # 输入数据
-N1 = 6
-M1 = 9
+# 第一组输入
+N1 = 5
+M1 = 6
 K1 = 4
 connections1 = [
+    (1, 2, 1),
+    (1, 3, 1),
+    (2, 4, 2),
+    (2, 5, 2),
+    (3, 4, 2),
+    (3, 5, 2)
+]
+
+# 第二组输入
+N2 = 6
+M2 = 9
+K2 = 4
+connections2 = [
     (1, 2, 1),
     (1, 3, 3),
     (2, 4, 2),
@@ -52,19 +66,6 @@ connections1 = [
     (5, 6, 3),
     (1, 6, 8),
     (2, 6, 4)
-]
-
-# 第二组输入
-N2 = 5
-M2 = 6
-K2 = 4
-connections2 = [
-    (1, 2, 1),
-    (1, 3, 1),
-    (2, 4, 2),
-    (2, 5, 2),
-    (3, 4, 2),
-    (3, 5, 2)
 ]
 
 # 第三组输入
@@ -130,9 +131,7 @@ find_K_shortest_paths(N4, M4, K4, connections4)
 print('五、')
 find_K_shortest_paths(N5, M5, K5, connections5)
 
-# 读取输入
-N, M, K = map(int, input().split())
-connections = [list(map(int, input().split())) for _ in range(M)]
-
-# 调用函数并输出结果
-find_K_shortest_paths(N, M, K, connections)
+# N, M, K = map(int, input().split())
+# connections = [list(map(int, input().split())) for _ in range(M)]
+#
+# find_K_shortest_paths(N, M, K, connections)

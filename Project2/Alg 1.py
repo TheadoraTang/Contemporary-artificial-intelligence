@@ -62,7 +62,7 @@ for l in lists:
     result = solve_puzzle(initial_state)
     print(result)
 
-# 读取输入
-initial_state = list(map(int, input().strip()))
-result = solve_puzzle(initial_state)
-print(result)
+# # 读取输入
+# initial_state = list(map(int, input().strip()))
+# result = solve_puzzle(initial_state)
+# print(result)
