@@ -1,0 +1,10 @@
+torchtext==0.6.0
+torch
+transformers
+pandas
+nltk
+sklearn
+matplotlib
+tensorflow
+keras
+numpy
